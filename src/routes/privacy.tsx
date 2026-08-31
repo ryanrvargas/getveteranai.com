@@ -18,7 +18,7 @@ export const Route = createFileRoute('/privacy')({
 function Privacy() {
   return (
     <LegalPage title="Privacy Policy" updated="August 23, 2026">
-      <p>Veteran AI Solutions (&quot;Veteran AI Solutions,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) respects your privacy. This Privacy Policy explains what information we may collect, how we use it, and the choices available to you when you interact with our website, forms, services, and messaging programs.</p>
+      <p>Veteran AI Solutions ("Veteran AI Solutions") respects your privacy. This Privacy Policy explains what information we may collect, how we use it, and the choices available to you when you interact with our website, forms, services, and messaging programs.</p>
 
       <h2>1. Information we collect</h2>
       <p>Depending on how you interact with us, we may collect information you voluntarily provide, such as your name, phone number, email address, service address, business information, appointment information, and details you include in a service request or inquiry.</p>
@@ -27,22 +27,18 @@ function Privacy() {
       <h2>2. How we use information</h2>
       <p>We may use information to respond to inquiries, provide requested services, send service-related communications, facilitate scheduling, operate and improve our workflows, maintain records, prevent misuse, and comply with applicable obligations.</p>
 
-      <h2>3. SMS and mobile information</h2>
-      <div className="notice"><strong>Mobile opt-in information and consent are not sold or shared with third parties or affiliates for their own marketing or promotional purposes.</strong></div>
-      <p>If you explicitly opt in to receive SMS messages from Veteran AI Solutions, we may send messages relating to your inquiry, requested service, scheduling, appointment information, and limited follow-up concerning that request.</p>
-      <ul>
-        <li>Message frequency varies.</li>
-        <li>Message and data rates may apply.</li>
-        <li>Reply STOP to unsubscribe.</li>
-        <li>Reply HELP for help.</li>
-      </ul>
-      <p>Your decision to consent to SMS messages is voluntary. Where applicable, you may still complete the primary form or request without consenting to receive SMS messages.</p>
+      <h2>3. SMS Messaging and Mobile Information</h2>
+      <p>If you provide your mobile phone number and consent to receive text messages, Veteran AI Solutions may send SMS messages related to your service request, appointment scheduling, customer support, follow-up communications, and other requested services.</p>
+      <p>Message frequency may vary depending on your interactions and service request. Message and data rates may apply. You may opt out of SMS messages at any time by replying STOP. For assistance, reply HELP.</p>
+      <p>We do not share, sell, rent, or provide your mobile phone number, SMS opt-in information, or messaging consent to third parties or affiliates for marketing or promotional purposes.</p>
+      <p>Mobile information and text messaging consent will not be shared with third parties or affiliates for marketing or promotional purposes.</p>
+      <p>Any sharing of information with service providers that assist us in providing our services does not include sharing SMS opt-in data or consent for those third parties' own marketing or promotional purposes.</p>
 
       <h2>4. Service providers</h2>
-      <p>We may use service providers that support functions such as website hosting, workflow automation, messaging, email, scheduling, data storage, and related business operations. These providers may process information on our behalf as needed to provide their services. We do not authorize service providers to use mobile opt-in information for their own marketing or promotional purposes.</p>
+      <p>We may use service providers that support functions such as website hosting, workflow automation, messaging, email, scheduling, data storage, and related business operations. These providers may process information on our behalf as needed to provide their services. Service providers do not receive mobile phone numbers or SMS opt-in information for their own marketing or promotional purposes, as detailed in Section 3.</p>
 
       <h2>5. Sharing of information</h2>
-      <p>We may share information when reasonably necessary to operate our services, comply with law, protect rights or safety, or complete a transaction involving our business. We do not sell your mobile number or SMS consent, and we do not share mobile opt-in data with third parties or affiliates for their own marketing or promotional purposes.</p>
+      <p>We may share information when reasonably necessary to operate our services, comply with law, protect rights or safety, or complete a transaction involving our business. However, mobile phone numbers, SMS opt-in information, and messaging consent are not shared with third parties or affiliates for marketing or promotional purposes, as detailed in Section 3.</p>
 
       <h2>6. Data retention and security</h2>
       <p>We retain information for as long as reasonably necessary for the purposes described in this policy, subject to operational, legal, and recordkeeping needs. We use reasonable administrative and technical measures intended to protect information, but no system can be guaranteed to be completely secure.</p>
@@ -50,11 +46,11 @@ function Privacy() {
       <h2>7. Your choices</h2>
       <p>You may opt out of SMS messages at any time by replying STOP. You may request help by replying HELP. You may also choose not to provide optional information, although this may limit our ability to fulfill a request.</p>
 
-      <h2>8. Children&apos;s privacy</h2>
+      <h2>8. Children's privacy</h2>
       <p>Our services are not directed to children under 13, and we do not knowingly collect personal information from children under 13.</p>
 
       <h2>9. Changes to this policy</h2>
-      <p>We may update this Privacy Policy from time to time. The updated version will be posted on this page with a revised &quot;Last updated&quot; date.</p>
+      <p>We may update this Privacy Policy from time to time. The updated version will be posted on this page with a revised "Last updated" date.</p>
 
       <h2>10. Contact</h2>
       <p>If you have questions about this Privacy Policy, please contact Veteran AI Solutions through the contact method made available on our website or service form.</p>
