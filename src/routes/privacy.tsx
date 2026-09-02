@@ -17,7 +17,7 @@ export const Route = createFileRoute('/privacy')({
 
 function Privacy() {
   return (
-    <LegalPage title="Privacy Policy" updated="August 23, 2026">
+    <LegalPage title="Privacy Policy" updated="September 2, 2026">
       <p>Veteran AI Solutions ("Veteran AI Solutions") respects your privacy. This Privacy Policy explains what information we may collect, how we use it, and the choices available to you when you interact with our website, forms, services, and messaging programs.</p>
 
       <h2>1. Information we collect</h2>
