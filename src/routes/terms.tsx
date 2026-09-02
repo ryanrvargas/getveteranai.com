@@ -17,7 +17,7 @@ export const Route = createFileRoute('/terms')({
 
 function Terms() {
   return (
-    <LegalPage title="Terms & Conditions" updated="August 23, 2026">
+    <LegalPage title="Terms & Conditions" updated="September 2, 2026">
       <p>These Terms & Conditions govern your use of the Veteran AI Solutions website, forms, services, and messaging programs. By using our website or submitting a request, you agree to these Terms to the extent applicable to your use.</p>
 
       <h2>1. Services</h2>
