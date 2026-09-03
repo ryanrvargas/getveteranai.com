@@ -59,7 +59,7 @@ function Terms() {
       <h2>10. Changes to these terms</h2>
       <p>We may update these Terms from time to time. Updated Terms will be posted on this page with a revised &quot;Last updated&quot; date.</p>
 
-      <h2>11. Contact</h2>
+      <h2>11. Contact </h2>
       <p>If you have questions about these Terms, please contact Veteran AI Solutions through the contact method made available on our website or service form.</p>
     </LegalPage>
   )
