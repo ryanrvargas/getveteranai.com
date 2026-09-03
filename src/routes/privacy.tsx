@@ -17,7 +17,7 @@ export const Route = createFileRoute('/privacy')({
 
 function Privacy() {
   return (
-    <LegalPage title="Privacy Policy" updated="September 2, 2026">
+    <LegalPage title="Privacy Policy" updated="September 3, 2026">
       <p>Veteran AI Solutions ("Veteran AI Solutions") respects your privacy. This Privacy Policy explains what information we may collect, how we use it, and the choices available to you when you interact with our website, forms, services, and messaging programs.</p>
 
       <h2>1. Information we collect</h2>
@@ -28,11 +28,11 @@ function Privacy() {
       <p>We may use information to respond to inquiries, provide requested services, send service-related communications, facilitate scheduling, operate and improve our workflows, maintain records, prevent misuse, and comply with applicable obligations.</p>
 
       <h2>3. SMS Messaging and Mobile Information</h2>
-      <p>If you provide your mobile phone number and consent to receive text messages, Veteran AI Solutions may send SMS messages related to your service request, appointment scheduling, customer support, follow-up communications, and other requested services.</p>
-      <p>Message frequency may vary depending on your interactions and service request. Message and data rates may apply. You may opt out of SMS messages at any time by replying STOP. For assistance, reply HELP.</p>
-      <p>We do not share, sell, rent, or provide your mobile phone number, SMS opt-in information, or messaging consent to third parties or affiliates for marketing or promotional purposes.</p>
-      <p>Mobile information and text messaging consent will not be shared with third parties or affiliates for marketing or promotional purposes.</p>
-      <p>Any sharing of information with service providers that assist us in providing our services does not include sharing SMS opt-in data or consent for those third parties' own marketing or promotional purposes.</p>
+      <p>If you opt in to receive SMS messages from Veteran AI Solutions, we may use your mobile phone number and messaging consent information to send messages regarding service requests, scheduling, appointment information, service updates, and limited follow-up.</p>
+      <p>Message frequency varies. Message and data rates may apply. You may reply STOP at any time to unsubscribe from SMS messages. Reply HELP for assistance.</p>
+      <p>Veteran AI Solutions does not share, sell, rent, or provide your mobile phone number, SMS opt-in information, or messaging consent data to third parties or affiliates for marketing or promotional purposes.</p>
+      <p>We may use service providers solely as necessary to operate and deliver our messaging services. Such service providers are not permitted to use your mobile information or messaging consent for their own marketing or promotional purposes.</p>
+      <p>Consent to receive SMS messages is voluntary and is not a condition of purchase.</p>
 
       <h2>4. Service providers</h2>
       <p>We may use service providers that support functions such as website hosting, workflow automation, messaging, email, scheduling, data storage, and related business operations. These providers may process information on our behalf as needed to provide their services. Service providers do not receive mobile phone numbers or SMS opt-in information for their own marketing or promotional purposes, as detailed in Section 3.</p>
