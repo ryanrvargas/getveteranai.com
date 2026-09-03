@@ -59,7 +59,7 @@ function Contact() {
             <div className="absolute -left-52 top-56 size-[34rem] rounded-full bg-[#8ef0c7]/8 blur-[110px]" />
           </div>
 
-          <div className="mx-auto grid w-[min(calc(100%-2.5rem),70rem)] gap-12 py-20 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16 lg:py-28">
+          <div className="mx-auto grid w-[min(calc(100%-2.5rem),70rem)] gap-12 pt-10 pb-20 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16 lg:pt-14 lg:pb-28">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.035] px-3 py-1.5 text-sm font-semibold text-[#8ef0c7]">
                 <MessageSquareText className="size-4" aria-hidden="true" />
