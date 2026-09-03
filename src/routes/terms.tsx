@@ -17,7 +17,7 @@ export const Route = createFileRoute('/terms')({
 
 function Terms() {
   return (
-    <LegalPage title="Terms & Conditions" updated="September 2, 2026">
+    <LegalPage title="Terms & Conditions" updated="September 3, 2026">
       <p>These Terms & Conditions govern your use of the Veteran AI Solutions website, forms, services, and messaging programs. By using our website or submitting a request, you agree to these Terms to the extent applicable to your use.</p>
 
       <h2>1. Services</h2>
@@ -59,8 +59,8 @@ function Terms() {
       <h2>10. Changes to these terms</h2>
       <p>We may update these Terms from time to time. Updated Terms will be posted on this page with a revised &quot;Last updated&quot; date.</p>
 
-      <h2>11. Contact </h2>
-      <p>If you have questions about these Terms, please contact Veteran AI Solutions through the contact method made available on our website or service form.</p>
+      <h2>11. Contact</h2>
+      <p>For customer support, visit <a href="https://getveteranai.com">https://getveteranai.com</a>. For SMS messaging assistance, reply HELP. To unsubscribe from SMS messages, reply STOP.</p>
     </LegalPage>
   )
 }
