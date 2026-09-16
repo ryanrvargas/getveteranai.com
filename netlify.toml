@@ -1,7 +1,14 @@
 [build]
   command = "vite build"
   publish = "dist/client"
+
 [dev]
   command = "npm run dev"
   targetPort = 3000
   port = 8888
+
+[[redirects]]
+  from = "/book/:token"
+  to = "https://calendly.com/veteranaisolutions/service?utm_source=veteran_ai&utm_medium=sms&utm_campaign=hvac_voice_lead&utm_content=:token"
+  status = 302
+  force = true
