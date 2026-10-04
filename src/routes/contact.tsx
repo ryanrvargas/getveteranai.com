@@ -1,5 +1,5 @@
 import { FormEvent, useState } from 'react'
-import { ArrowRight, CheckCircle2, Mail, MessageSquareText } from 'lucide-react'
+import { ArrowRight, CheckCircle2, PhoneCall, Sparkles, Workflow } from 'lucide-react'
 import { createFileRoute } from '@tanstack/react-router'
 
 import { SiteFooter, SiteHeader } from '@/components/site-shell'
@@ -11,7 +11,7 @@ export const Route = createFileRoute('/contact')({
       {
         name: 'description',
         content:
-          'Contact Veteran AI Solutions about automated lead response, follow-up, and service-business workflow automation.',
+          'Talk with Veteran AI Solutions about AI receptionists, missed-call lead capture, follow-up, scheduling, and custom business automation.',
       },
     ],
   }),
@@ -59,44 +59,63 @@ function Contact() {
             <div className="absolute -left-52 top-56 size-[34rem] rounded-full bg-[#8ef0c7]/8 blur-[110px]" />
           </div>
 
-          <div className="mx-auto grid w-[min(calc(100%-2.5rem),70rem)] gap-12 pt-10 pb-20 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16 lg:pt-14 lg:pb-28">
+          <div className="mx-auto grid w-[min(calc(100%-2.5rem),70rem)] gap-12 pb-20 pt-10 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16 lg:pb-28 lg:pt-14">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.035] px-3 py-1.5 text-sm font-semibold text-[#8ef0c7]">
-                <MessageSquareText className="size-4" aria-hidden="true" />
-                Start a conversation
+                <Sparkles className="size-4" aria-hidden="true" />
+                Tell us what is slowing you down
               </div>
 
               <h1 className="mt-7 font-display text-[clamp(3.1rem,7vw,6rem)] font-semibold leading-[0.92] tracking-[-0.06em]">
-                Tell us where leads are getting lost.
+                Where are calls, leads, or repetitive work getting stuck?
               </h1>
 
               <p className="mt-7 max-w-xl text-lg leading-8 text-[#aebbd0]">
-                Share a little about your business, your current lead process, and what you would like to automate. Veteran AI Solutions will follow up by email.
+                You do not need to know exactly what automation you need. Tell us how your business handles calls and leads today, where the process breaks down, or what your team keeps doing manually.
               </p>
 
-              <div className="mt-10 rounded-[1.4rem] border border-white/10 bg-white/[0.035] p-6">
-                <div className="flex items-start gap-4">
-                  <div className="grid size-11 shrink-0 place-items-center rounded-xl bg-[#62d4ff]/10 text-[#62d4ff]">
-                    <Mail className="size-5" aria-hidden="true" />
+              <div className="mt-10 grid gap-3">
+                <div className="flex items-start gap-4 rounded-[1.2rem] border border-white/10 bg-white/[0.035] p-5">
+                  <div className="grid size-10 shrink-0 place-items-center rounded-xl bg-[#62d4ff]/10 text-[#62d4ff]">
+                    <PhoneCall className="size-5" aria-hidden="true" />
                   </div>
                   <div>
-                    <h2 className="font-display text-xl font-semibold">Business email coming next</h2>
-                    <p className="mt-2 text-sm leading-6 text-[#aebbd0]">
-                      We are setting up a direct Veteran AI Solutions business email. Until then, this form is the best way to get in touch.
+                    <h2 className="font-display text-lg font-semibold">Missing calls or leads?</h2>
+                    <p className="mt-1 text-sm leading-6 text-[#aebbd0]">
+                      We can look at AI receptionist, lead capture, follow-up, scheduling, and handoff options.
                     </p>
                   </div>
                 </div>
+
+                <div className="flex items-start gap-4 rounded-[1.2rem] border border-white/10 bg-white/[0.035] p-5">
+                  <div className="grid size-10 shrink-0 place-items-center rounded-xl bg-[#8ef0c7]/10 text-[#8ef0c7]">
+                    <Workflow className="size-5" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h2 className="font-display text-lg font-semibold">Too much manual work?</h2>
+                    <p className="mt-1 text-sm leading-6 text-[#aebbd0]">
+                      Show us the repetitive process. We will tell you whether it is a good candidate for automation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 border-l-2 border-[#8ef0c7]/40 pl-5">
+                <div className="text-sm font-bold uppercase tracking-[0.14em] text-[#8ef0c7]">What happens next</div>
+                <p className="mt-2 text-sm leading-6 text-[#aebbd0]">
+                  We will review what you send, identify the highest-value opportunity, and follow up to discuss whether there is a practical solution worth building.
+                </p>
               </div>
             </div>
 
             <div className="rounded-[1.75rem] border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.06),rgba(255,255,255,0.025))] p-6 shadow-2xl shadow-black/25 sm:p-8">
               {status === 'success' ? (
-                <div className="grid min-h-[31rem] place-items-center text-center">
+                <div className="grid min-h-[36rem] place-items-center text-center">
                   <div className="max-w-md">
                     <CheckCircle2 className="mx-auto size-12 text-[#8ef0c7]" aria-hidden="true" />
-                    <h2 className="mt-5 font-display text-3xl font-semibold tracking-tight">Message received.</h2>
+                    <h2 className="mt-5 font-display text-3xl font-semibold tracking-tight">Got it.</h2>
                     <p className="mt-3 leading-7 text-[#aebbd0]">
-                      Thanks for reaching out. Your message was submitted to Veteran AI Solutions and we will follow up using the email address you provided.
+                      Your information was sent to Veteran AI Solutions. We will review your current process and follow up using the contact information you provided.
                     </p>
                     <button
                       type="button"
@@ -110,8 +129,11 @@ function Contact() {
               ) : (
                 <>
                   <div className="mb-7">
-                    <div className="text-sm font-bold uppercase tracking-[0.16em] text-[#62d4ff]">Contact Veteran AI Solutions</div>
-                    <h2 className="mt-2 font-display text-3xl font-semibold tracking-tight">What can we help you automate?</h2>
+                    <div className="text-sm font-bold uppercase tracking-[0.16em] text-[#62d4ff]">Start a conversation</div>
+                    <h2 className="mt-2 font-display text-3xl font-semibold tracking-tight">Tell us about your business.</h2>
+                    <p className="mt-3 text-sm leading-6 text-[#aebbd0]">
+                      A few details are enough. We are looking for the problem first, not trying to force every business into the same system.
+                    </p>
                   </div>
 
                   <form
@@ -123,7 +145,7 @@ function Contact() {
                     className="space-y-5"
                   >
                     <input type="hidden" name="form-name" value="contact" />
-                    <p className="absolute h-px w-px -m-px overflow-hidden border-0 p-0 [clip:rect(0_0_0_0)]" aria-hidden="true">
+                    <p className="absolute -m-px h-px w-px overflow-hidden border-0 p-0 [clip:rect(0_0_0_0)]" aria-hidden="true">
                       <label>
                         Do not fill this out: <input name="bot-field" tabIndex={-1} autoComplete="off" />
                       </label>
@@ -143,6 +165,20 @@ function Contact() {
                       </label>
 
                       <label className="block">
+                        <span className="mb-2 block text-sm font-semibold text-[#ccd5e4]">Business name</span>
+                        <input
+                          required
+                          name="business"
+                          type="text"
+                          autoComplete="organization"
+                          className="w-full rounded-xl border border-white/12 bg-[#07111f]/70 px-4 py-3.5 text-white outline-none transition placeholder:text-[#65758d] focus:border-[#62d4ff]/65 focus:ring-2 focus:ring-[#62d4ff]/15"
+                          placeholder="Your business"
+                        />
+                      </label>
+                    </div>
+
+                    <div className="grid gap-5 sm:grid-cols-2">
+                      <label className="block">
                         <span className="mb-2 block text-sm font-semibold text-[#ccd5e4]">Email</span>
                         <input
                           required
@@ -153,32 +189,51 @@ function Contact() {
                           placeholder="you@business.com"
                         />
                       </label>
+
+                      <label className="block">
+                        <span className="mb-2 block text-sm font-semibold text-[#ccd5e4]">
+                          Phone <span className="font-normal text-[#7f8fa6]">(optional)</span>
+                        </span>
+                        <input
+                          name="phone"
+                          type="tel"
+                          autoComplete="tel"
+                          className="w-full rounded-xl border border-white/12 bg-[#07111f]/70 px-4 py-3.5 text-white outline-none transition placeholder:text-[#65758d] focus:border-[#62d4ff]/65 focus:ring-2 focus:ring-[#62d4ff]/15"
+                          placeholder="Best number to reach you"
+                        />
+                      </label>
                     </div>
 
                     <label className="block">
-                      <span className="mb-2 block text-sm font-semibold text-[#ccd5e4]">Business name <span className="font-normal text-[#7f8fa6]">(optional)</span></span>
-                      <input
-                        name="business"
-                        type="text"
-                        autoComplete="organization"
-                        className="w-full rounded-xl border border-white/12 bg-[#07111f]/70 px-4 py-3.5 text-white outline-none transition placeholder:text-[#65758d] focus:border-[#62d4ff]/65 focus:ring-2 focus:ring-[#62d4ff]/15"
-                        placeholder="Your business"
-                      />
+                      <span className="mb-2 block text-sm font-semibold text-[#ccd5e4]">What are you most interested in?</span>
+                      <select
+                        required
+                        name="interest"
+                        defaultValue=""
+                        className="w-full rounded-xl border border-white/12 bg-[#07111f] px-4 py-3.5 text-white outline-none transition focus:border-[#62d4ff]/65 focus:ring-2 focus:ring-[#62d4ff]/15"
+                      >
+                        <option value="" disabled>Select one</option>
+                        <option value="AI receptionist / missed calls">AI receptionist / missed calls</option>
+                        <option value="Lead capture and follow-up">Lead capture and follow-up</option>
+                        <option value="Scheduling / appointment automation">Scheduling / appointment automation</option>
+                        <option value="Custom workflow automation">Custom workflow automation</option>
+                        <option value="Not sure yet">Not sure yet</option>
+                      </select>
                     </label>
 
                     <label className="block">
-                      <span className="mb-2 block text-sm font-semibold text-[#ccd5e4]">Message</span>
+                      <span className="mb-2 block text-sm font-semibold text-[#ccd5e4]">What is happening today?</span>
                       <textarea
                         required
                         name="message"
-                        rows={7}
+                        rows={6}
                         className="w-full resize-y rounded-xl border border-white/12 bg-[#07111f]/70 px-4 py-3.5 text-white outline-none transition placeholder:text-[#65758d] focus:border-[#62d4ff]/65 focus:ring-2 focus:ring-[#62d4ff]/15"
-                        placeholder="Tell us how leads come in today, what happens next, and where you think opportunities are being missed."
+                        placeholder="Example: We miss calls while our team is working, customers leave voicemails, and someone has to call everyone back later. I want a better way to capture those leads."
                       />
                     </label>
 
                     <p className="text-xs leading-5 text-[#7f8fa6]">
-                      This contact form does not enroll you in SMS messaging. Information submitted here is used to respond to your inquiry. See our{' '}
+                      This form does not enroll you in SMS marketing. If you provide a phone number, it may be used to respond directly to this inquiry. See our{' '}
                       <a href="/privacy/" className="font-semibold text-[#a9e8f5] underline-offset-4 hover:underline">Privacy Policy</a>.
                     </p>
 
@@ -193,7 +248,7 @@ function Contact() {
                       disabled={status === 'sending'}
                       className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-br from-[#62d4ff] to-[#8ef0c7] px-5 py-3.5 font-bold text-[#03101b] shadow-[0_16px_50px_rgba(98,212,255,0.14)] transition hover:-translate-y-0.5 disabled:cursor-wait disabled:opacity-65"
                     >
-                      {status === 'sending' ? 'Sending…' : 'Send message'}
+                      {status === 'sending' ? 'Sending…' : 'Tell us about your workflow'}
                       {status !== 'sending' && <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />}
                     </button>
                   </form>
