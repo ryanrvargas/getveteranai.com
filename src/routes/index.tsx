@@ -1,4 +1,13 @@
-import { ArrowRight, CalendarCheck, MessageSquareText, Radar, Send } from 'lucide-react'
+import {
+  ArrowRight,
+  BellRing,
+  CalendarCheck,
+  MessageSquareText,
+  PhoneCall,
+  Radar,
+  Send,
+  Workflow,
+} from 'lucide-react'
 import { createFileRoute } from '@tanstack/react-router'
 
 import { SiteFooter, SiteHeader } from '@/components/site-shell'
@@ -6,11 +15,11 @@ import { SiteFooter, SiteHeader } from '@/components/site-shell'
 export const Route = createFileRoute('/')({
   head: () => ({
     meta: [
-      { title: 'Veteran AI Solutions | Automated Lead Response & Follow-Up' },
+      { title: 'Veteran AI Solutions | AI Receptionist & Business Automation' },
       {
         name: 'description',
         content:
-          'Veteran AI Solutions builds automated lead-response and follow-up systems for service businesses.',
+          'Veteran AI Solutions builds AI receptionist and automation systems that answer calls, capture leads, follow up, book appointments, and keep business workflows moving.',
       },
     ],
   }),
@@ -20,29 +29,52 @@ export const Route = createFileRoute('/')({
 const steps = [
   {
     number: '01',
-    title: 'Capture',
-    description: 'A customer submits a service request or lead form.',
-    icon: Radar,
+    title: 'Answer',
+    description:
+      'An AI receptionist can answer when your team is busy, after hours, or unable to pick up.',
+    icon: PhoneCall,
   },
   {
     number: '02',
-    title: 'Respond',
-    description: 'The customer receives a timely confirmation and a clear next step.',
-    icon: Send,
+    title: 'Capture',
+    description:
+      'It collects the caller’s contact information, reason for calling, and the details your business needs.',
+    icon: Radar,
   },
   {
     number: '03',
     title: 'Follow up',
     description:
-      'Limited follow-up messages can be sent when the lead has not yet responded or booked.',
+      'Lead details can be organized, your team notified, and the customer sent the right next step by text or email.',
     icon: MessageSquareText,
   },
   {
     number: '04',
-    title: 'Book',
+    title: 'Book & automate',
     description:
-      'The customer can be directed toward an appointment or another business-approved action.',
+      'Customers can be moved toward scheduling while repetitive tasks continue automatically behind the scenes.',
     icon: CalendarCheck,
+  },
+]
+
+const capabilities = [
+  {
+    title: 'AI receptionist',
+    description:
+      'Give callers a real conversation instead of voicemail. Capture who they are, why they called, and what they need so your team can take over with context.',
+    icon: PhoneCall,
+  },
+  {
+    title: 'Lead recovery',
+    description:
+      'Turn missed opportunities into organized leads with fast notifications, follow-up messages, and clear handoffs instead of hoping someone remembers to call back.',
+    icon: BellRing,
+  },
+  {
+    title: 'Workflow automation',
+    description:
+      'Connect calls, forms, scheduling, email, SMS, spreadsheets, and other business tools so repetitive work moves without constant manual effort.',
+    icon: Workflow,
   },
 ]
 
@@ -62,16 +94,16 @@ function Home() {
             <div className="max-w-4xl">
               <div className="animate-rise inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.035] px-3 py-1.5 text-sm font-semibold tracking-wide text-[#8ef0c7]">
                 <span className="size-1.5 rounded-full bg-[#8ef0c7] shadow-[0_0_0_5px_rgba(142,240,199,0.1)]" />
-                Automated lead response for service businesses
+                AI receptionists + business automation
               </div>
               <h1 className="animate-rise mt-7 max-w-5xl font-display text-[clamp(3.4rem,8.4vw,7.5rem)] font-semibold leading-[0.88] tracking-[-0.065em] [animation-delay:90ms]">
-                Respond faster.
+                Stop losing leads
                 <span className="block bg-gradient-to-r from-[#f5f7fb] via-[#a9e8f5] to-[#8ef0c7] bg-clip-text text-transparent">
-                  Miss fewer opportunities.
+                  when you can’t answer.
                 </span>
               </h1>
               <p className="animate-rise mt-8 max-w-2xl text-lg leading-8 text-[#aebbd0] [animation-delay:180ms] sm:text-xl">
-                Veteran AI Solutions builds practical lead-response systems that acknowledge new inquiries, organize lead information, offer scheduling, and follow up when a prospect has not yet responded.
+                Veteran AI Solutions builds AI receptionists and custom automations that answer calls, capture lead details, notify your team, follow up, and move customers toward booking—without making you live on the phone.
               </p>
               <div className="animate-rise mt-10 flex flex-wrap gap-3 [animation-delay:270ms]">
                 <a
@@ -82,10 +114,10 @@ function Home() {
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                 </a>
                 <a
-                  href="/privacy/"
+                  href="/contact/"
                   className="inline-flex items-center rounded-xl border border-white/12 bg-white/[0.035] px-5 py-3.5 font-bold text-white transition hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#62d4ff]"
                 >
-                  Privacy & SMS policy
+                  Talk about your workflow
                 </a>
               </div>
             </div>
@@ -95,10 +127,10 @@ function Home() {
                 <div className="absolute inset-4 rounded-[1.35rem] border border-white/8 bg-[#0c1a2d] p-5">
                   <div className="flex items-center gap-2 border-b border-white/8 pb-4">
                     <span className="size-2 rounded-full bg-[#8ef0c7]" />
-                    <span className="text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[#aebbd0]">Workflow active</span>
+                    <span className="text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[#aebbd0]">Receptionist active</span>
                   </div>
                   <div className="mt-5 space-y-3">
-                    {['New inquiry captured', 'Reply sent in seconds', 'Scheduling link shared'].map((label, index) => (
+                    {['Call answered', 'Lead details captured', 'Team notified'].map((label, index) => (
                       <div key={label} className="rounded-xl border border-white/8 bg-white/[0.035] p-3">
                         <div className="mb-2 flex items-center justify-between">
                           <span className="text-[0.65rem] font-bold text-[#62d4ff]">0{index + 1}</span>
@@ -109,7 +141,7 @@ function Home() {
                     ))}
                   </div>
                   <div className="absolute bottom-5 left-5 right-5 h-1.5 overflow-hidden rounded-full bg-white/8">
-                    <div className="h-full w-[78%] rounded-full bg-gradient-to-r from-[#62d4ff] to-[#8ef0c7]" />
+                    <div className="h-full w-[86%] rounded-full bg-gradient-to-r from-[#62d4ff] to-[#8ef0c7]" />
                   </div>
                 </div>
               </div>
@@ -121,10 +153,10 @@ function Home() {
           <div className="mx-auto w-[min(calc(100%-2.5rem),70rem)]">
             <div className="grid gap-6 lg:grid-cols-[1fr_0.72fr] lg:items-end">
               <h2 className="font-display text-[clamp(2.6rem,5vw,4.8rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
-                A simpler path from inquiry to appointment.
+                Your business shouldn’t stop because nobody picked up.
               </h2>
               <p className="max-w-xl text-lg leading-8 text-[#aebbd0] lg:justify-self-end">
-                The system is designed around a straightforward customer experience rather than unnecessary complexity.
+                When a customer calls and your team cannot answer, the opportunity should still be captured, organized, and moved forward.
               </p>
             </div>
 
@@ -134,7 +166,10 @@ function Home() {
                 return (
                   <article
                     key={step.number}
-                    className={`group relative min-h-64 overflow-hidden rounded-[1.4rem] border border-white/10 bg-gradient-to-b from-white/[0.055] to-white/[0.02] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#62d4ff]/35 ${index % 2 === 1 ? 'lg:translate-y-8 lg:hover:translate-y-7' : ''}`}
+                    className={
+                      'group relative min-h-64 overflow-hidden rounded-[1.4rem] border border-white/10 bg-gradient-to-b from-white/[0.055] to-white/[0.02] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#62d4ff]/35 ' +
+                      (index % 2 === 1 ? 'lg:translate-y-8 lg:hover:translate-y-7' : '')
+                    }
                   >
                     <div className="flex items-start justify-between">
                       <span className="text-sm font-extrabold tracking-[0.16em] text-[#62d4ff]">{step.number}</span>
@@ -149,13 +184,52 @@ function Home() {
               })}
             </div>
 
+            <div className="mt-24">
+              <div className="max-w-3xl">
+                <div className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#62d4ff]">What we build</div>
+                <h2 className="mt-4 font-display text-[clamp(2.4rem,4.8vw,4.4rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
+                  More than an answering service.
+                </h2>
+                <p className="mt-5 text-lg leading-8 text-[#aebbd0]">
+                  The goal is not just to answer the phone. It is to make sure the lead goes somewhere useful and the next step happens.
+                </p>
+              </div>
+
+              <div className="mt-10 grid gap-4 md:grid-cols-3">
+                {capabilities.map((capability) => {
+                  const Icon = capability.icon
+                  return (
+                    <article
+                      key={capability.title}
+                      className="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 sm:p-7"
+                    >
+                      <div className="grid size-11 place-items-center rounded-xl border border-[#62d4ff]/20 bg-[#62d4ff]/8">
+                        <Icon className="size-5 text-[#8ef0c7]" aria-hidden="true" />
+                      </div>
+                      <h3 className="mt-6 font-display text-2xl font-semibold tracking-tight">{capability.title}</h3>
+                      <p className="mt-3 text-sm leading-6 text-[#aebbd0]">{capability.description}</p>
+                    </article>
+                  )
+                })}
+              </div>
+            </div>
+
             <div className="mt-20 grid gap-8 overflow-hidden rounded-[1.75rem] border border-white/10 bg-[linear-gradient(120deg,rgba(98,212,255,0.1),rgba(142,240,199,0.055))] p-7 sm:p-10 md:grid-cols-[0.72fr_1fr] md:items-center lg:mt-28">
               <div className="font-display text-3xl font-semibold leading-tight tracking-[-0.035em] sm:text-4xl">
-                Built first for home-service workflows.
+                Built around your business, not one industry.
               </div>
-              <p className="text-lg leading-8 text-[#ccd5e4]">
-                Our initial prototype focuses on HVAC lead response, with a modular approach that can later be adapted for other service businesses.
-              </p>
+              <div>
+                <p className="text-lg leading-8 text-[#ccd5e4]">
+                  We tailor the receptionist, questions, routing, follow-ups, and integrations around the way your business already works. If a repetitive process is costing you time or missed opportunities, we can look at automating it.
+                </p>
+                <a
+                  href="/contact/"
+                  className="group mt-6 inline-flex items-center gap-2 font-bold text-[#8ef0c7] transition hover:text-white"
+                >
+                  Tell us what is slowing you down
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
