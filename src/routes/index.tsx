@@ -5,7 +5,6 @@ import {
   MessageSquareText,
   PhoneCall,
   Radar,
-  Send,
   Workflow,
 } from 'lucide-react'
 import { createFileRoute } from '@tanstack/react-router'
