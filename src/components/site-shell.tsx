@@ -3,16 +3,17 @@ import { Menu } from 'lucide-react'
 export function SiteHeader({ home = false }: { home?: boolean }) {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#07111f]/82 backdrop-blur-xl">
-      <div className="mx-auto flex min-h-[4.5rem] w-[min(calc(100%-2.5rem),70rem)] items-center justify-between gap-5">
+      <div className="mx-auto flex min-h-[5rem] w-[min(calc(100%-2.5rem),70rem)] items-center justify-between gap-4">
         <a
           href="/"
-          className="flex items-center gap-3 rounded-lg font-display font-semibold tracking-[-0.02em] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#62d4ff]"
+          aria-label="Veteran AI Solutions home"
+          className="rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#62d4ff]"
         >
-          <span className="grid size-10 place-items-center rounded-xl bg-gradient-to-br from-[#62d4ff] to-[#8ef0c7] font-sans text-lg font-black text-[#03101b] shadow-[0_8px_30px_rgba(98,212,255,0.15)]">
-            V
-          </span>
-          <span className="hidden sm:inline">Veteran AI Solutions</span>
-          <span className="sm:hidden">Veteran AI</span>
+          <img
+            src="/veteran-ai-logo.svg"
+            alt="Veteran AI Solutions"
+            className="h-auto w-[11.5rem] sm:w-[14.5rem]"
+          />
         </a>
         <nav aria-label="Primary navigation" className="flex items-center gap-3 text-xs font-semibold text-[#aebbd0] sm:gap-7 sm:text-sm">
           {home && (
