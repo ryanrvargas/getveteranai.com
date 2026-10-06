@@ -213,6 +213,43 @@ function Home() {
               </div>
             </div>
 
+            <div className="mt-24 border-t border-white/8 pt-14 lg:mt-32">
+              <div className="grid gap-8 md:grid-cols-[0.72fr_1fr] md:items-center">
+                <div>
+                  <div className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#62d4ff]">
+                    Businesses we work with
+                  </div>
+                  <h2 className="mt-4 font-display text-[clamp(2.2rem,4.2vw,3.8rem)] font-semibold leading-[0.98] tracking-[-0.05em]">
+                    Built for real businesses.
+                  </h2>
+                </div>
+
+                <a
+                  href="https://decklifeservice.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#62d4ff]/35 hover:bg-white/[0.05] sm:p-7"
+                  aria-label="Visit Deck Life LLC"
+                >
+                  <div className="flex items-center justify-between gap-6">
+                    <div>
+                      <div className="font-display text-2xl font-semibold tracking-tight text-white">
+                        Deck Life LLC
+                      </div>
+                      <p className="mt-2 text-sm leading-6 text-[#aebbd0]">
+                        Marine service business working with Veteran AI Solutions.
+                      </p>
+                    </div>
+                    <ArrowRight
+                      className="size-5 shrink-0 text-[#8ef0c7] transition-transform group-hover:translate-x-1"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <div className="mt-5 text-sm font-bold text-[#62d4ff]">decklifeservice.com</div>
+                </a>
+              </div>
+            </div>
+
             <div className="mt-20 grid gap-8 overflow-hidden rounded-[1.75rem] border border-white/10 bg-[linear-gradient(120deg,rgba(98,212,255,0.1),rgba(142,240,199,0.055))] p-7 sm:p-10 md:grid-cols-[0.72fr_1fr] md:items-center lg:mt-28">
               <div className="font-display text-3xl font-semibold leading-tight tracking-[-0.035em] sm:text-4xl">
                 Built around your business, not one industry.
