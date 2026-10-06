@@ -224,29 +224,55 @@ function Home() {
                   </h2>
                 </div>
 
-                <a
-                  href="https://decklifeservice.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#62d4ff]/35 hover:bg-white/[0.05] sm:p-7"
-                  aria-label="Visit Deck Life LLC"
-                >
-                  <div className="flex items-center justify-between gap-6">
-                    <div>
-                      <div className="font-display text-2xl font-semibold tracking-tight text-white">
-                        Deck Life LLC
+                <div className="grid gap-4">
+                  <a
+                    href="https://decklifeservice.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#62d4ff]/35 hover:bg-white/[0.05] sm:p-7"
+                    aria-label="Visit Deck Life LLC"
+                  >
+                    <div className="flex items-center justify-between gap-6">
+                      <div>
+                        <div className="font-display text-2xl font-semibold tracking-tight text-white">
+                          Deck Life LLC
+                        </div>
+                        <p className="mt-2 text-sm leading-6 text-[#aebbd0]">
+                          Marine service business working with Veteran AI Solutions.
+                        </p>
                       </div>
-                      <p className="mt-2 text-sm leading-6 text-[#aebbd0]">
-                        Marine service business working with Veteran AI Solutions.
-                      </p>
+                      <ArrowRight
+                        className="size-5 shrink-0 text-[#8ef0c7] transition-transform group-hover:translate-x-1"
+                        aria-hidden="true"
+                      />
                     </div>
-                    <ArrowRight
-                      className="size-5 shrink-0 text-[#8ef0c7] transition-transform group-hover:translate-x-1"
-                      aria-hidden="true"
-                    />
-                  </div>
-                  <div className="mt-5 text-sm font-bold text-[#62d4ff]">decklifeservice.com</div>
-                </a>
+                    <div className="mt-5 text-sm font-bold text-[#62d4ff]">decklifeservice.com</div>
+                  </a>
+
+                  <a
+                    href="https://prizmmarketing.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#62d4ff]/35 hover:bg-white/[0.05] sm:p-7"
+                    aria-label="Visit Prizm Marketing"
+                  >
+                    <div className="flex items-center justify-between gap-6">
+                      <div>
+                        <div className="font-display text-2xl font-semibold tracking-tight text-white">
+                          Prizm Marketing
+                        </div>
+                        <p className="mt-2 text-sm leading-6 text-[#aebbd0]">
+                          Marketing business working with Veteran AI Solutions.
+                        </p>
+                      </div>
+                      <ArrowRight
+                        className="size-5 shrink-0 text-[#8ef0c7] transition-transform group-hover:translate-x-1"
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div className="mt-5 text-sm font-bold text-[#62d4ff]">prizmmarketing.org</div>
+                  </a>
+                </div>
               </div>
             </div>
 
